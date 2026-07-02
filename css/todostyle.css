@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* background-image: url('../myassets/img/Add-tasks.png'); */
+    background-color: rgba(241, 31, 31, 0.762);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* My Container */
+.todo-wrapper {
+    background-color: rgba(26, 25, 25, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.title {
+    color: #EA8712;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-btn {
+margin-left: 10px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #EA8712;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d9730c;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #f4f4f4;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn.active {
+    background-color: #EA8712;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.countdown {
+    font-size: 12px;
+    color: #EA8712;
+    margin-right: 10px;
+}
+
+li button {
+    background-color: transparent;
+    border: none;
+    color: #EA8712;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+li button.edit-btn {
+    margin-right: 10px;
+}
