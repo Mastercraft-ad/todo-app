@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedul Your Everyday Activities</title>
-    <link rel="stylesheet" href="css/todostyle.css">
-    <script src="js/function.js"></script>
+    <title>Schedule Your Everyday Activities</title>
+    <link rel="stylesheet" href="/css/todostyle.css">
 </head>
 <body>
     <div class="todo-wrapper">
         <div class="todo-container">
             <h1 class="title">Schedule Your Everyday Life</h1>
+
             <div class="input-container">
-                <form action="" method="post">
-                <div> 
-                    <input type="text" id="new-task" placeholder="Enter task..." required>
-
-                <input type="datetime-local" id="task-time" required>
-                </div>
-
-                <!-- <button id="add-task-btn" class="add-btn">Add Task</button> -->
-                <button type="submit" id="add-task-btn" class="add-btn">Add Task</button>
+                <form id="task-form">
+                    <div class="input-row">
+                        <input type="text" id="new-task" placeholder="Enter task..." required>
+                        <input type="datetime-local" id="task-time" required>
+                    </div>
+                    <button type="submit" id="add-task-btn" class="add-btn">Add Task</button>
                 </form>
             </div>
 
@@ -29,8 +26,11 @@
                 <button class="filter-btn" data-filter="completed">Completed Tasks</button>
                 <button class="filter-btn" data-filter="pending">Pending Tasks</button>
             </div>
+
             <ul id="task-list"></ul>
         </div>
     </div>
+
+    <script src="/todo-app/js/function.js" defer></script>
 </body>
 </html>
